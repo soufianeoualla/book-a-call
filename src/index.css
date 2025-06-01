@@ -1,20 +1,26 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@font-face {
+  font-family: "InterDisplay";
+  src: url("/src/assets/font/InterDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: "InterDisplay", sans-serif;
+}
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #171717;
-  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f4;
+
+  font-size: 16px;
 }
 
 .gradient {
-  background: radial-gradient(
-    179.95% 110.14% at 50% 100%,
-    rgba(255, 255, 255, 0.08) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background-image: linear-gradient(180deg, #ffffff 0%, #ececec 100%);
 }
